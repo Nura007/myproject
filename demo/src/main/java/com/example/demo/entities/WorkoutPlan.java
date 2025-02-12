@@ -1,9 +1,15 @@
+
 package com.example.demo.entities;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
+@Setter
+@Getter
 @Entity
 public class WorkoutPlan {
+    // Геттеры и сеттеры
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int planId;
@@ -13,6 +19,7 @@ public class WorkoutPlan {
     private String difficulty;
 
     @ManyToOne
+
     @JoinColumn(name = "user_id")
     private User user;
 
@@ -26,20 +33,10 @@ public class WorkoutPlan {
         this.user = user;
     }
 
-    public WorkoutPlan(String workoutName, int workoutDuration, String difficulty) {
+    public WorkoutPlan(int i, String title, String описание, int i1, String intermediate) {
     }
 
-    public WorkoutPlan(int planId, String title, String description, int duration, String difficulty) {
-    }
-
-    public int getPlanId() { return planId; }
-    public String getTitle() { return title; }
-    public String getDescription() { return description; }
-    public int getDuration() { return duration; }
-    public String getDifficulty() { return difficulty; }
-    public User getUser() { return user; }
-    public void setUser(User user) { this.user = user; }
-
+    // Переопределение toString()
     @Override
     public String toString() {
         return "WorkoutPlan{" +
