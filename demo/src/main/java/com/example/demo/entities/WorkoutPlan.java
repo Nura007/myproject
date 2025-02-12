@@ -26,6 +26,12 @@ public class WorkoutPlan {
         this.user = user;
     }
 
+    public WorkoutPlan(String workoutName, int workoutDuration, String difficulty) {
+    }
+
+    public WorkoutPlan(int planId, String title, String description, int duration, String difficulty) {
+    }
+
     public int getPlanId() { return planId; }
     public String getTitle() { return title; }
     public String getDescription() { return description; }

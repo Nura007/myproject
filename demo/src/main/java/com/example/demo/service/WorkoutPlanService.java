@@ -1,6 +1,6 @@
 package com.example.demo.service;
 
-import com.example.demo.WorkoutPlan;
+import com.example.demo.entities.WorkoutPlan;
 import com.example.demo.repository.WorkoutPlanRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

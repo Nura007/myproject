@@ -1,3 +1,5 @@
+package com.example.demo.entities;
+
 import java.util.*;
 
 public class FitnessApp {

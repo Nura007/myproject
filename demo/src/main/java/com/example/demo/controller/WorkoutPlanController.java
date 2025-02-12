@@ -2,7 +2,7 @@ package com.example.demo.controller;
 
 import com.example.demo.entities.Coach;
 import com.example.demo.entities.User;
-import com.example.demo.WorkoutPlan;
+import com.example.demo.entities.WorkoutPlan;
 import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
